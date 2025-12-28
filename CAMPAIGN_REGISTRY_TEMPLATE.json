@@ -1,0 +1,204 @@
+{
+  "campaign_registry_version": "1.0",
+  "campaign_name": "YOUR_CAMPAIGN_NAME",
+  "system": "D&D 5e",
+  "created_date": "YYYY-MM-DD",
+  "last_updated": "YYYY-MM-DD",
+  "current_session": 0,
+
+  "QUICK_REFERENCE": {
+    "_note": "Fill this in for fast context loading",
+    "campaign_premise": "One-sentence summary of what this campaign is about",
+    "current_situation": "Where we are RIGHT NOW in the story",
+    "next_session_focus": "What's likely to happen next session",
+    "active_quests": ["Quest 1", "Quest 2"],
+    "major_threats": ["Threat 1", "Threat 2"]
+  },
+
+  "PARTY": {
+    "_note": "Player characters - update after each session",
+    "members": [
+      {
+        "player_name": "Real name of player",
+        "character_name": "Character name",
+        "class_level": "Fighter 5",
+        "race": "Human",
+        "background": "Soldier",
+        "key_traits": ["Honorable", "Haunted by past"],
+        "personal_quest": "Seeking revenge on...",
+        "notable_items": ["Sword of Flames", "Letter from father"],
+        "relationships": {
+          "other_pc_name": "Best friends",
+          "npc_name": "Owes a debt to"
+        },
+        "secrets": {
+          "_dm_only": true,
+          "content": "Actually a secret agent for..."
+        }
+      }
+    ],
+    "group_dynamics": "How the party generally operates together",
+    "party_resources": {
+      "gold": 0,
+      "notable_shared_items": []
+    }
+  },
+
+  "WORLD": {
+    "setting_name": "Name of your world/setting",
+    "current_location": "Where the party is now",
+    "current_date_ingame": "If you track in-game calendar",
+    
+    "locations": {
+      "TEMPLATE_LOCATION": {
+        "name": "Location Name",
+        "type": "City/Town/Dungeon/Region",
+        "description": "Brief description",
+        "notable_features": ["Feature 1", "Feature 2"],
+        "known_npcs_here": ["NPC1", "NPC2"],
+        "player_knowledge": "What players know about this place",
+        "dm_secrets": {
+          "_dm_only": true,
+          "content": "Hidden things players don't know yet"
+        },
+        "first_appeared": "Session #"
+      }
+    },
+
+    "factions": {
+      "TEMPLATE_FACTION": {
+        "name": "Faction Name",
+        "type": "Guild/Government/Cult/etc",
+        "goals": "What they want",
+        "methods": "How they operate",
+        "leader": "Who runs it",
+        "relationship_to_party": "Allied/Neutral/Hostile/Unknown",
+        "player_knowledge": "What players know",
+        "dm_secrets": {
+          "_dm_only": true,
+          "content": "Their real agenda"
+        }
+      }
+    }
+  },
+
+  "NPCS": {
+    "_note": "All named NPCs the party has encountered",
+    "TEMPLATE_NPC": {
+      "name": "NPC Name",
+      "status": "Alive/Dead/Unknown",
+      "location": "Where they are/were last seen",
+      "occupation": "What they do",
+      "appearance": "Brief physical description",
+      "personality": "Key personality traits",
+      "motivation": "What they want",
+      "relationship_to_party": "How they feel about/relate to the party",
+      "key_interactions": [
+        {
+          "session": 1,
+          "what_happened": "Brief description"
+        }
+      ],
+      "player_knowledge": "What players know about them",
+      "dm_secrets": {
+        "_dm_only": true,
+        "content": "Hidden motivations, secret identity, etc"
+      },
+      "first_appeared": "Session #",
+      "last_appeared": "Session #"
+    }
+  },
+
+  "PLOT": {
+    "main_storyline": {
+      "premise": "The central conflict/story",
+      "current_act": "Where we are in the narrative arc",
+      "major_revelations": [
+        {
+          "session": 1,
+          "revelation": "What was revealed"
+        }
+      ],
+      "upcoming_beats": {
+        "_dm_only": true,
+        "content": ["Planned story beats not yet revealed"]
+      }
+    },
+
+    "active_quests": [
+      {
+        "name": "Quest Name",
+        "giver": "Who gave it",
+        "objective": "What needs to be done",
+        "reward": "What's promised",
+        "status": "Active/Completed/Failed/Abandoned",
+        "progress": "Current state of the quest",
+        "complications": "What's making it difficult"
+      }
+    ],
+
+    "resolved_quests": [],
+
+    "plot_threads": {
+      "_note": "Dangling threads, foreshadowing, unresolved mysteries",
+      "threads": [
+        {
+          "name": "Thread Name",
+          "introduced": "Session #",
+          "description": "What it is",
+          "status": "Open/Resolved",
+          "resolution": "How it was resolved (if applicable)"
+        }
+      ]
+    }
+  },
+
+  "ITEMS_OF_NOTE": {
+    "_note": "Significant items, artifacts, macguffins",
+    "TEMPLATE_ITEM": {
+      "name": "Item Name",
+      "type": "Weapon/Armor/Artifact/Quest Item",
+      "description": "What it is",
+      "properties": "What it does (if known)",
+      "current_owner": "Who has it",
+      "history": "Where it came from",
+      "player_knowledge": "What players know about it",
+      "dm_secrets": {
+        "_dm_only": true,
+        "content": "Hidden properties or significance"
+      }
+    }
+  },
+
+  "SESSION_LOG": {
+    "_note": "Append after each session",
+    "sessions": []
+  },
+
+  "CONTINUITY_NOTES": {
+    "_note": "Quick reference for things that need to stay consistent",
+    "established_facts": [
+      {
+        "fact": "The king's name is Aldric III",
+        "established_session": 1,
+        "category": "World"
+      }
+    ],
+    "retcons": [
+      {
+        "original": "What it was",
+        "changed_to": "What it is now",
+        "reason": "Why we changed it",
+        "session_changed": 5
+      }
+    ]
+  },
+
+  "DM_NOTES": {
+    "_dm_only": true,
+    "future_plans": "Where you want the story to go",
+    "secret_connections": "Hidden relationships players don't know",
+    "contingencies": "If players do X, then Y happens",
+    "inspiration": "Ideas you want to incorporate"
+  }
+}

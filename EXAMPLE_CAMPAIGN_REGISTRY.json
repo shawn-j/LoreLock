@@ -1,0 +1,346 @@
+{
+  "campaign_registry_version": "1.0",
+  "campaign_name": "The Shattered Crown",
+  "system": "D&D 5e",
+  "created_date": "2025-01-15",
+  "last_updated": "2025-03-20",
+  "current_session": 12,
+
+  "QUICK_REFERENCE": {
+    "campaign_premise": "The kingdom's crown was shattered into five pieces, and dark forces race to reassemble it before the rightful heir can claim it.",
+    "current_situation": "Party just discovered the second crown shard is hidden in the Sunken Temple beneath Lake Vess. They're in Millbrook gathering supplies before the dive.",
+    "next_session_focus": "Underwater temple exploration, likely encounter with the Drowned Priestess",
+    "active_quests": ["Find the Five Shards", "Clear Thornwood of bandits (side)", "Return Mira's locket to her family"],
+    "major_threats": ["The Obsidian Hand cult", "Duke Varen (secretly backing the cult)", "The Drowned Priestess (guards 2nd shard)"]
+  },
+
+  "PARTY": {
+    "members": [
+      {
+        "player_name": "Mike",
+        "character_name": "Theron Brightblade",
+        "class_level": "Paladin 6",
+        "race": "Human",
+        "background": "Noble",
+        "key_traits": ["Honorable to a fault", "Secretly doubts the gods", "Protective of children"],
+        "personal_quest": "Prove he's worthy of his family name after his brother's disgrace",
+        "notable_items": ["Brightblade family sword (heirloom)", "Letter from his mother", "Shard #1 (party carries)"],
+        "relationships": {
+          "Lyra": "Developing romantic tension",
+          "Grimjaw": "Respectful rivalry, good friends",
+          "Baron Aldric": "His uncle, strained relationship"
+        },
+        "secrets": {
+          "_dm_only": true,
+          "content": "His brother didn't actually betray the family - he was framed by Duke Varen. Brother is alive, imprisoned."
+        }
+      },
+      {
+        "player_name": "Sarah",
+        "character_name": "Lyra Shadowmend",
+        "class_level": "Rogue 5 / Warlock 1",
+        "race": "Half-Elf",
+        "background": "Urchin",
+        "key_traits": ["Sarcastic", "Loyal once trust is earned", "Hates nobility"],
+        "personal_quest": "Find out who killed her mentor, 'Old Crow'",
+        "notable_items": ["Crow feather pendant (mentor's)", "Obsidian dagger (taken from cultist)", "Debt note from Merchant's Guild"],
+        "relationships": {
+          "Theron": "Finds him annoyingly noble but growing respect",
+          "Grimjaw": "Drinking buddies",
+          "Whisper": "Her warlock patron, mysterious entity"
+        },
+        "secrets": {
+          "_dm_only": true,
+          "content": "Whisper is actually a fragment of the Shattered Crown itself, manipulating events"
+        }
+      },
+      {
+        "player_name": "Dave",
+        "character_name": "Grimjaw",
+        "class_level": "Barbarian 6",
+        "race": "Half-Orc",
+        "background": "Outlander",
+        "key_traits": ["Surprisingly philosophical", "Hates slavers", "Collects teeth from worthy foes"],
+        "personal_quest": "Find his tribe, scattered after a raid",
+        "notable_items": ["Tooth necklace", "Greataxe 'Bone-Biter'", "Map fragment showing tribe's last location"],
+        "relationships": {
+          "Theron": "Respects his fighting, teases his uptightness",
+          "Lyra": "Protective older brother energy",
+          "Chief Urrak": "His father, whereabouts unknown"
+        },
+        "secrets": {
+          "_dm_only": true,
+          "content": "His tribe was scattered by agents of the Obsidian Hand looking for a shard his father possessed"
+        }
+      }
+    ],
+    "group_dynamics": "Theron leads in social situations, Lyra handles stealth and intrigue, Grimjaw is the frontline. They bicker but genuinely care about each other. Running joke about Grimjaw's cooking being terrible.",
+    "party_resources": {
+      "gold": 847,
+      "notable_shared_items": ["Crown Shard #1", "Potion of Water Breathing x3", "Sending Stone (paired with Baron Aldric)"]
+    }
+  },
+
+  "WORLD": {
+    "setting_name": "The Kingdom of Valdris",
+    "current_location": "Millbrook",
+    "current_date_ingame": "15th of Greenleaf, Year 892",
+    
+    "locations": {
+      "millbrook": {
+        "name": "Millbrook",
+        "type": "Town",
+        "description": "A fishing town on the shores of Lake Vess, known for its smoked fish and the ancient temple ruins visible beneath the clear water.",
+        "notable_features": ["The Rusty Anchor tavern", "Lake Vess", "Sunken Temple visible from shore", "Weekly fish market"],
+        "known_npcs_here": ["Old Bess", "Father Merik", "Finn the Ferryman"],
+        "player_knowledge": "Friendly town, good place to resupply. The temple sank 200 years ago during the Godstear earthquake.",
+        "dm_secrets": {
+          "_dm_only": true,
+          "content": "The Drowned Priestess in the temple was once a hero who willingly sank the temple to protect the shard. She's not entirely evil - can potentially be reasoned with if they learn her story."
+        },
+        "first_appeared": "Session 10"
+      },
+      "thornwood": {
+        "name": "Thornwood Forest",
+        "type": "Region",
+        "description": "Dense forest between Millbrook and the capital. Bandit activity has increased recently.",
+        "notable_features": ["The Hollow Oak (bandit hideout)", "Old Druid Circle", "Abandoned watchtower"],
+        "known_npcs_here": ["Red Marta (bandit leader)"],
+        "player_knowledge": "Bandits led by someone called 'Red Marta'. Travelers are being robbed.",
+        "dm_secrets": {
+          "_dm_only": true,
+          "content": "Red Marta is actually working for Duke Varen, disrupting travel to isolate Millbrook"
+        },
+        "first_appeared": "Session 8"
+      },
+      "sunken_temple": {
+        "name": "The Sunken Temple of Valdris",
+        "type": "Dungeon",
+        "description": "Ancient temple to the old gods, now submerged beneath Lake Vess. Stone spires visible through the water.",
+        "notable_features": ["Central shrine (shard location)", "Flooded corridors", "Air pockets in upper chambers", "Undead guardians"],
+        "known_npcs_here": ["The Drowned Priestess"],
+        "player_knowledge": "The second shard is here. It's guarded by something powerful. Will need water breathing.",
+        "dm_secrets": {
+          "_dm_only": true,
+          "content": "The temple has 3 levels. Shard is on level 3. The Drowned Priestess tests intruders - those who prove worthy by showing mercy may earn her blessing instead of her wrath."
+        },
+        "first_appeared": "Session 11 (mentioned), Session 13 (entered)"
+      }
+    },
+
+    "factions": {
+      "obsidian_hand": {
+        "name": "The Obsidian Hand",
+        "type": "Cult",
+        "goals": "Reassemble the Shattered Crown to resurrect the Tyrant King",
+        "methods": "Infiltration, assassination, dark magic, manipulation of nobles",
+        "leader": "The Voice (identity unknown)",
+        "relationship_to_party": "Hostile - party has shard they want",
+        "player_knowledge": "Dangerous cult seeking the crown shards. Wear black gloves with obsidian rings. Killed several people in the capital.",
+        "dm_secrets": {
+          "_dm_only": true,
+          "content": "The Voice is actually the Tyrant King's spirit, possessing different hosts. Current host is Duchess Isadora. Duke Varen is a high-ranking member but doesn't know the Voice's true identity."
+        }
+      }
+    }
+  },
+
+  "NPCS": {
+    "old_bess": {
+      "name": "Old Bess",
+      "status": "Alive",
+      "location": "Millbrook - The Rusty Anchor",
+      "occupation": "Tavern owner",
+      "appearance": "Weathered woman in her 60s, gray hair in a braid, missing two fingers on left hand, warm smile",
+      "personality": "Motherly, no-nonsense, tells great stories, protective of her regulars",
+      "motivation": "Keep her tavern running, look after the people of Millbrook",
+      "relationship_to_party": "Friendly - they helped her with a rat problem in the cellar (session 10)",
+      "key_interactions": [
+        {
+          "session": 10,
+          "what_happened": "Party cleared giant rats from her cellar, she gave them free room and board"
+        },
+        {
+          "session": 11,
+          "what_happened": "Told them the legend of the Sunken Temple and the 'lady beneath the waves'"
+        }
+      ],
+      "player_knowledge": "Retired sailor, knows local legends, runs the best tavern in town",
+      "dm_secrets": {
+        "_dm_only": true,
+        "content": "Her grandfather was one of the priests who helped sink the temple. She has a key that opens a secret entrance - will give it to the party if they earn her full trust."
+      },
+      "first_appeared": "Session 10",
+      "last_appeared": "Session 12"
+    },
+    "drowned_priestess": {
+      "name": "The Drowned Priestess (Seraphine)",
+      "status": "Undead",
+      "location": "Sunken Temple",
+      "occupation": "Guardian of the Second Shard",
+      "appearance": "Spectral woman in waterlogged robes, glowing blue eyes, seaweed in her hair, perpetually dripping",
+      "personality": "Sorrowful, duty-bound, tests intruders rather than attacking immediately",
+      "motivation": "Protect the shard from those who would misuse it",
+      "relationship_to_party": "Unknown - haven't met yet",
+      "key_interactions": [],
+      "player_knowledge": "Legend says a 'lady beneath the waves' guards something precious",
+      "dm_secrets": {
+        "_dm_only": true,
+        "content": "Was Seraphine, high priestess 200 years ago. Chose to sink the temple and bind her soul to guard the shard. Will test party with three trials: Combat (can they survive?), Mercy (will they spare her minions who beg for release?), and Sacrifice (will they give up something precious?). Pass all three and she gives the shard willingly."
+      },
+      "first_appeared": "Session 13 (upcoming)",
+      "last_appeared": null
+    }
+  },
+
+  "PLOT": {
+    "main_storyline": {
+      "premise": "The Shattered Crown, broken 200 years ago to defeat the Tyrant King, is being sought by the Obsidian Hand cult to resurrect him. The party must find the five shards first.",
+      "current_act": "Act 1: The Hunt Begins (gathering shards)",
+      "major_revelations": [
+        {
+          "session": 3,
+          "revelation": "The Obsidian Hand cult exists and is hunting the shards"
+        },
+        {
+          "session": 7,
+          "revelation": "Duke Varen is connected to the cult (party found his signet ring on a dead cultist)"
+        },
+        {
+          "session": 9,
+          "revelation": "Shard #1 found in the ruins of Keth's Tower"
+        }
+      ],
+      "upcoming_beats": {
+        "_dm_only": true,
+        "content": [
+          "Drowned Priestess encounter and trials (Session 13-14)",
+          "Red Marta ambush on return from temple (Session 14-15)",
+          "Grimjaw finds clue about his tribe (Session 15)",
+          "Duke Varen makes direct move against party (Session 16-17)"
+        ]
+      }
+    },
+
+    "active_quests": [
+      {
+        "name": "Find the Five Shards",
+        "giver": "Baron Aldric (Theron's uncle)",
+        "objective": "Locate all five pieces of the Shattered Crown before the Obsidian Hand",
+        "reward": "Restoration of Brightblade family honor, saving the kingdom",
+        "status": "Active",
+        "progress": "Shard 1: Found. Shard 2: Location known (Sunken Temple). Shards 3-5: Unknown locations.",
+        "complications": "Cult is also hunting, Duke Varen working against us"
+      },
+      {
+        "name": "Clear Thornwood of Bandits",
+        "giver": "Millbrook village elder",
+        "objective": "Stop the bandits disrupting trade routes",
+        "reward": "200 gold, goodwill of Millbrook",
+        "status": "Active",
+        "progress": "Know leader is Red Marta, haven't confronted yet",
+        "complications": "Party wants to do temple first, bandits may act while they're gone"
+      }
+    ],
+
+    "resolved_quests": [
+      {
+        "name": "The Rats of the Rusty Anchor",
+        "giver": "Old Bess",
+        "objective": "Clear giant rats from tavern cellar",
+        "reward": "Free room and board, Bess's gratitude",
+        "status": "Completed",
+        "resolution": "Cleared rats, found they were fleeing something deeper - tunnel to old smuggler caves"
+      }
+    ],
+
+    "plot_threads": {
+      "threads": [
+        {
+          "name": "Theron's Brother",
+          "introduced": "Session 1",
+          "description": "Theron believes his brother Marcus betrayed the family. Truth: Marcus was framed.",
+          "status": "Open"
+        },
+        {
+          "name": "Lyra's Patron Whisper",
+          "introduced": "Session 5",
+          "description": "Lyra's warlock patron is mysterious and possibly manipulating her",
+          "status": "Open"
+        },
+        {
+          "name": "Grimjaw's Lost Tribe",
+          "introduced": "Session 2",
+          "description": "Grimjaw's tribe was scattered, father missing",
+          "status": "Open"
+        },
+        {
+          "name": "The Smuggler Tunnels",
+          "introduced": "Session 10",
+          "description": "Tunnels found beneath Rusty Anchor cellar - where do they lead?",
+          "status": "Open"
+        }
+      ]
+    }
+  },
+
+  "ITEMS_OF_NOTE": {
+    "crown_shard_1": {
+      "name": "Crown Shard #1 (The Wisdom Fragment)",
+      "type": "Artifact",
+      "description": "A curved piece of ancient gold, warm to the touch, faintly glowing runes",
+      "properties": "Grants +1 to Wisdom saves while carried. Full properties unlock when crown is complete.",
+      "current_owner": "Party (Theron carries it)",
+      "history": "Found in Keth's Tower, was protected by a sphinx riddle",
+      "player_knowledge": "One of five pieces, has some protective magic",
+      "dm_secrets": {
+        "_dm_only": true,
+        "content": "Each shard contains a fragment of the Tyrant King's soul. They subtly influence carriers toward paranoia and ambition. The 'warmth' is the soul fragment recognizing proximity to potential hosts."
+      }
+    },
+    "lyras_obsidian_dagger": {
+      "name": "Cultist's Obsidian Dagger",
+      "type": "Weapon",
+      "description": "Black glass blade, never dulls, slightly cold",
+      "properties": "+1 dagger, deals extra 1d4 necrotic on crit",
+      "current_owner": "Lyra",
+      "history": "Taken from dead cultist in Session 6",
+      "player_knowledge": "Magical dagger from the cult",
+      "dm_secrets": {
+        "_dm_only": true,
+        "content": "Acts as a tracking beacon - cult can sense its general location. They haven't acted on this yet."
+      }
+    }
+  },
+
+  "SESSION_LOG": {
+    "sessions": [
+      {
+        "session_number": 12,
+        "date": "2025-03-15",
+        "summary": "Party arrived in Millbrook, gathered information about the Sunken Temple, purchased water breathing potions, and learned the legend of the Drowned Priestess from Old Bess.",
+        "major_events": ["Arrived Millbrook", "Bought potions", "Heard temple legend"],
+        "ended_at": "Millbrook, preparing to dive to temple next morning"
+      }
+    ]
+  },
+
+  "CONTINUITY_NOTES": {
+    "established_facts": [
+      {"fact": "The Tyrant King was defeated 200 years ago", "established_session": 1, "category": "World"},
+      {"fact": "Baron Aldric is Theron's uncle on his mother's side", "established_session": 1, "category": "NPC"},
+      {"fact": "Duke Varen's signet ring found on dead cultist", "established_session": 7, "category": "Plot"},
+      {"fact": "Old Bess has two missing fingers on her left hand", "established_session": 10, "category": "NPC"},
+      {"fact": "Water breathing potions cost 50gp each in Millbrook", "established_session": 12, "category": "World"}
+    ],
+    "retcons": []
+  },
+
+  "DM_NOTES": {
+    "_dm_only": true,
+    "future_plans": "Act 1 ends when they get shard 2 and escape Red Marta ambush. Act 2 involves traveling to the capital where things get political.",
+    "secret_connections": "Whisper (Lyra's patron) = Crown fragment. Duke Varen framed Marcus. Grimjaw's tribe attacked by cult seeking shard his father had (shard 4).",
+    "contingencies": "If party kills Drowned Priestess without trials, shard is harder to remove (curse). If they spare her, she becomes ally later.",
+    "inspiration": "Drowned Priestess encounter inspired by Lady of the Lake. Red Marta should feel like a Robin Hood gone wrong."
+  }
+}

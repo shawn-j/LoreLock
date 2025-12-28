@@ -1,0 +1,149 @@
+{
+  "session_number": 0,
+  "real_world_date": "YYYY-MM-DD",
+  "session_title": "Optional fun title for the session",
+  
+  "attendance": {
+    "players_present": ["Player1", "Player2"],
+    "players_absent": ["Player3"],
+    "absent_character_handling": "How absent PCs were handled (stayed at inn, ran by another player, etc)"
+  },
+
+  "in_game_time": {
+    "started": "Day 15 of the journey / Morning in Waterdeep / etc",
+    "ended": "Day 17 / Evening / etc",
+    "time_passed": "2 days"
+  },
+
+  "location_tracking": {
+    "started_at": "Where the session began",
+    "ended_at": "Where the session ended",
+    "locations_visited": ["Location1", "Location2"]
+  },
+
+  "session_summary": {
+    "one_sentence": "The party [did main thing]",
+    "detailed": "Longer description of what happened this session"
+  },
+
+  "major_events": [
+    {
+      "event": "Description of what happened",
+      "significance": "Why it matters for the campaign",
+      "triggered_by": "What caused this to happen"
+    }
+  ],
+
+  "combat_encounters": [
+    {
+      "enemies": ["Goblin x4", "Goblin Boss"],
+      "location": "Forest clearing",
+      "outcome": "Victory/Defeat/Fled/Negotiated",
+      "notable_moments": "Critical hits, near deaths, clever tactics",
+      "resources_used": "Spell slots, potions, etc",
+      "loot": ["10 gold", "Rusty sword"]
+    }
+  ],
+
+  "npc_interactions": [
+    {
+      "npc_name": "NPC Name",
+      "nature": "First meeting / Ongoing relationship / Confrontation",
+      "what_happened": "Description of the interaction",
+      "npc_disposition_change": "More friendly / Now hostile / Unchanged",
+      "information_exchanged": "What was learned or revealed",
+      "promises_made": "Any deals, quests given, debts incurred"
+    }
+  ],
+
+  "player_character_moments": [
+    {
+      "character": "Character name",
+      "moment": "Description of notable character moment",
+      "type": "Roleplay / Combat / Decision / Character development"
+    }
+  ],
+
+  "decisions_made": [
+    {
+      "decision": "What the party chose to do",
+      "alternatives_rejected": "What they chose NOT to do",
+      "potential_consequences": "What this might lead to",
+      "dm_notes": {
+        "_dm_only": true,
+        "content": "How this affects your plans"
+      }
+    }
+  ],
+
+  "information_revealed": {
+    "to_players": [
+      {
+        "information": "What they learned",
+        "source": "How they learned it",
+        "accuracy": "True / Partially true / Misleading / False"
+      }
+    ],
+    "player_theories": "What the players think is going on (for DM tracking)"
+  },
+
+  "inventory_changes": {
+    "gained": [
+      {
+        "item": "Item name",
+        "who_has_it": "Which character",
+        "source": "Where it came from"
+      }
+    ],
+    "lost": [
+      {
+        "item": "Item name",
+        "how_lost": "Used / Sold / Stolen / Destroyed"
+      }
+    ],
+    "gold_change": "+50 or -30"
+  },
+
+  "quest_updates": {
+    "new_quests": [
+      {
+        "name": "Quest name",
+        "giver": "Who gave it",
+        "objective": "What to do"
+      }
+    ],
+    "quest_progress": [
+      {
+        "quest_name": "Existing quest",
+        "progress": "What changed"
+      }
+    ],
+    "quests_completed": ["Quest name"],
+    "quests_failed": ["Quest name"]
+  },
+
+  "plot_threads": {
+    "advanced": ["Thread that moved forward"],
+    "new_threads": ["New mystery or hook introduced"],
+    "resolved": ["Thread that was closed"]
+  },
+
+  "cliffhanger": {
+    "ended_on": "Description of where we left off",
+    "immediate_tension": "What needs to be addressed when we resume"
+  },
+
+  "prep_for_next_session": {
+    "likely_directions": "Where players will probably go next",
+    "prep_needed": ["Map of X", "Stats for Y", "NPC dialogue for Z"],
+    "unresolved_player_questions": "What players were asking about"
+  },
+
+  "meta_notes": {
+    "session_quality": "How did it go?",
+    "pacing": "Too fast / Good / Too slow",
+    "player_engagement": "What got them excited?",
+    "improvements": "What to do differently",
+    "fun_moments": "Memorable quotes, jokes, epic fails"
+  }
+}
